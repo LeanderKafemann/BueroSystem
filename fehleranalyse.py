@@ -1,7 +1,7 @@
 import os, shutil, time, random
 import webbrowser as wb
 
-print("Sie starten Fehleranalyse V4.3.0!")
+print("Sie starten Fehleranalyse V4.3.1!")
 
 BPATH = "./programdata/buero"
 
@@ -28,10 +28,6 @@ def fehlerbehebung(Id:str, *arg):
                 raise SystemError()
             case "BÃ¼!!!2":
                 print("Ihre BÃ¼ro-Datei fehlt! Installieren Sie die neueste Version manuell neu.")
-                raise SystemError()
-            case "BÃ¼F1":
-                print("Ihr Ã¼bergeordneter Ordner wurde falsch benannt!")
-                print("Benennen Sie den Ordner um.")
                 raise SystemError()
             case "Ad1":
                 os.mkdir("./programdata/ads")
@@ -189,8 +185,6 @@ if not "bueroUtils.py" in startfile:
     fehlerbehebung("BÃ¼!1")
 if not "bÃ¼ro.py" in startfile:
     fehlerbehebung("BÃ¼!!!2")
-if not "bÃ¼ro" in os.listdir("../"):
-    fehlerbehebung("BÃ¼F1")
 print("Ausgangsordner untersucht...")
 if not "ads" in prdata:
     fehlerbehebung("Ad1")
