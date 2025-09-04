@@ -1,6 +1,9 @@
 """
 Skript zum Installieren von Updates/-grades fÃ¼r BÃ¼ro.
 """
+
+__version__ = "4.4.0"
+
 def update(alter="Update", pStart=False):
     """
     Update: vorhandenes Paket wird upgedatet
