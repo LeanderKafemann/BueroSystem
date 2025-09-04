@@ -1,7 +1,7 @@
 import os, shutil, time, random
 import webbrowser as wb
 
-print("Sie starten Fehleranalyse V4.3.1!")
+print("Sie starten Fehleranalyse V4.4.0!")
 
 BPATH = "./programdata/buero"
 
